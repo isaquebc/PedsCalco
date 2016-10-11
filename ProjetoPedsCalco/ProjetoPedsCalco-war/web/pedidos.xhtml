@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
@@ -51,27 +46,20 @@ and open the template in the editor.
         <![endif]-->
     </h:head>
     <h:body>
+        <!--
+        =================
+        Menu de navegação!!!
+        -->
         <div class="menuSuperior">
             <ui:insert name="menuSuperior">
                 <ui:include src="menuSuperior.xhtml"></ui:include>
             </ui:insert>
         </div>
-        <div id="tf-produtos">
-            <div class="categories">
-                <ul class="cat">
-                    <li class="pull-left"><h4>Categorias:</h4></li>
-                    <li class="pull-right">
-                        <ol class="type">
-                            <li><a href="#" data-filter="*" class="active">Tudo</a></li>
-                            <li><a href="#" data-filter=".masculino">Masculino</a></li>
-                            <li><a href="#" data-filter=".feminino">Feminino</a></li>
-                            <li><a href="#" data-filter=".infantil" >Infantil</a></li>
-                        </ol>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-
+        <!-- 
+            =================
+            Corpo da Pagina
+        -->
+        <div id="tf-pedidos">
             <div id="lightbox" class="row">
                 <div class="col-sm-6 col-md-3 col-lg-3 feminino infantil">
                     <div class="portfolio-item">
@@ -79,7 +67,7 @@ and open the template in the editor.
                             <a href="#">
                                 <div class="hover-text">
                                     <h4>Adidas Jeremy Scott</h4>
-                                    <small>R$ XXX,xx</small>
+                                    <small>Pedido: C7AC5A8C5A87C5</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
@@ -95,7 +83,7 @@ and open the template in the editor.
                             <a href="#">
                                 <div class="hover-text">
                                     <h4>Air Force 1 - lv8 Branco</h4>
-                                    <small>R$ XXX,xx</small>
+                                    <small>Pedido: C7AC5A8C5A87C5</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
@@ -111,7 +99,7 @@ and open the template in the editor.
                             <a href="#">
                                 <div class="hover-text">
                                     <h4>Logo Design</h4>
-                                    <small>R$ XXX,xx</small>
+                                    <small>Pedido: C7AC5A8C5A87C5</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
@@ -127,7 +115,7 @@ and open the template in the editor.
                             <a href="#">
                                 <div class="hover-text">
                                     <h4>Nike Air Jordan Flight 23</h4>
-                                    <small>R$ XXX,xx</small>
+                                    <small>Pedido: C7AC5A8C5A87C5</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
@@ -142,7 +130,7 @@ and open the template in the editor.
                             <a href="#">
                                 <div class="hover-text">
                                     <h4>Tênis Infantil Masculino Nike Pico LT Casual</h4>
-                                    <small>R$ XXX,xx</small>
+                                    <small>Pedido: C7AC5A8C5A87C5</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
@@ -154,88 +142,7 @@ and open the template in the editor.
 
             </div>
         </div>
-        <!-- About Us Page
-        ==========================================-->
-        <div id="tf-about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="img/02.png" class="img-responsive"/>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-text">
-                            <div class="section-title">
-                                <h4>Sobre</h4>
-                                <h2>Nosso mundo...<strong>Sobre nós</strong></h2>
-                                <hr></hr>
-                                <div class="clearfix"></div>
-                            </div>
-                            <p class="intro">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</p>
-                            <ul class="about-list">
-                                <li>
-                                    <span class="fa fa-dot-circle-o"></span>
-                                    <strong>Missão</strong> - <em>missão missão missão missão missão missão</em>
-                                </li>
-                                <li>
-                                    <span class="fa fa-dot-circle-o"></span>
-                                    <strong>Visão</strong> - <em>Visão Visão Visão Visão Visão Visão Visão</em>
-                                </li>
-                                <li>
-                                    <span class="fa fa-dot-circle-o"></span>
-                                    <strong>Valores</strong> - <em>Valores Valores Valores Valores Valores Valores Valores</em>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Contact Section
-        ==========================================-->
-        <div id="tf-contact" class="text-center">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-
-                        <div class="section-title center">
-                            <h2>Fale <strong>conosco</strong></h2>
-                            <div class="line">
-                                <hr></hr>
-                            </div>
-                            <div class="clearfix"></div>
-                            <small><em>Aqui você tira duvidas, faz sugestões e até reclamações.</em></small>            
-                        </div>
-
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">E-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entre com e-mail"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Nome</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Message</label>
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn tf-btn btn-default">Enviar</button>
-                        </form>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
         <!--
         =================
         Rodapé
